@@ -1,79 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta http-equiv="refresh" content="7;url=https://www.stillhigh.com" />
-  <title>You Found It | Free420</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="5; url=https://free420.com/main" />
+  <title>Free420 Portal Activated</title>
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: #000000;
-      color: #ffffff;
-      font-family: 'Courier New', Courier, monospace;
+      background: radial-gradient(ellipse at center, #0c0c0c 0%, #000000 100%);
+      font-family: 'Segoe UI', sans-serif;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       height: 100vh;
-      text-align: center;
-      background-image: url('https://www.stillhigh.com/path-to-your-mountain-image.jpg'); /* Optional background image */
-      background-size: cover;
-      background-position: center;
+      overflow: hidden;
+      color: #e0e0e0;
     }
-    .overlay {
-      background: rgba(0, 0, 0, 0.75);
-      padding: 3rem;
-      border: 2px solid #7e57c2;
-      max-width: 600px;
+    .splash-container {
+      text-align: center;
+      animation: fadeIn 1.2s ease-out forwards;
+      max-width: 90%;
     }
     h1 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(90deg, #00ff99, #00bfff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: glow 2.5s infinite alternate;
     }
     p {
-      font-size: 1.1rem;
-      line-height: 1.6;
+      font-size: 1.15rem;
+      color: #ccc;
+      margin-top: 0.5rem;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.75rem 2rem;
-      background: #00FF99;
-      color: #000;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 5px;
+    .glow-ring {
+      width: 180px;
+      height: 180px;
+      margin: 2rem auto;
+      border: 6px solid rgba(0, 255, 153, 0.4);
+      border-top-color: #00ff99;
+      border-radius: 50%;
+      animation: spin 1.5s linear infinite, pulse 2s infinite ease-in-out;
     }
-    .timer {
-      margin-top: 1.5rem;
-      font-style: italic;
-      font-size: 0.9rem;
-      opacity: 0.7;
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 0 5px #00ff99, 0 0 15px #00ff9966; }
+      50% { box-shadow: 0 0 20px #00ff99aa, 0 0 30px #00ff9988; }
+    }
+    @keyframes glow {
+      0% { text-shadow: 0 0 5px #00ff99; }
+      100% { text-shadow: 0 0 15px #00ff99; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <div class="overlay">
-    <h1>🧭 You Were Meant to Find This</h1>
-    <p><strong>Free420 is now the gateway to something greater.</strong><br><br>
-      You scanned the code. You opened the gate.  
-      And now you’re one step closer to winning <strong>37+ acres</strong> of off-grid Colorado land.</p>
-
-    <p><strong>Every item purchased at StillHigh.com = one entry.</strong><br>
-    No strings. No gimmicks. Just freedom — and a flag with your name on it.</p>
-<!-- Progress Tracker -->
-<div style="margin-top: 2.5rem;">
-  <p style="font-size: 1.3rem; font-weight: bold; color: #00FF99;">
-    💰 $7.24 raised of $1,000,000 goal
-  </p>
-  <div style="width: 100%; background-color: #333; border-radius: 5px; height: 24px;">
-    <div style="width: 0.000724%; background-color: #00FF99; height: 100%; border-radius: 5px;"></div>
-  </div>
-</div>
-    <a class="button" href="https://www.stillhigh.com">🚀 Enter the Super Center »</a>
-    <p class="timer">Redirecting automatically in 7 seconds...</p>
+  <div class="splash-container">
+    <h1>🔓 Portal Unlocked</h1>
+    <div class="glow-ring"></div>
+    <p>You found it. The Free420 gateway has opened.</p>
+    <p>This QR isn’t just a code — it’s an invite to the inner circle 🌿</p>
+    <p>Redirecting you to something legendary...</p>
   </div>
 </body>
 </html>
